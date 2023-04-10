@@ -1,0 +1,158 @@
+:root {
+  --border-radius: 4px;
+  --color-primary: #1b4f72;
+  --color-green: #1abc9c;
+  --color-blue-dark: #17202a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 16px 48px;
+  margin-bottom: 48px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.main-header h3 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+input,
+select {
+  height: 40px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #c0c0c0;
+  border-radius: var(--border-radius);
+}
+
+input:focus,
+input:focus-visible,
+select:focus,
+select:focus-visible {
+  border: 1px solid var(--color-primary);
+  outline: none;
+}
+
+.btn {
+  height: 40px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.btn-full-width {
+  flex: 1;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--color-green);
+}
+
+.btn-secondary {
+  color: var(--color-primary);
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+}
+
+.btn-small {
+  padding: 6px 12px;
+  height: unset;
+  font-size: 0.8rem;
+}
+
+.table-data {
+  border-spacing: 0;
+}
+
+.table-data > thead tr {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.table-data > thead th {
+  padding: 8px 0;
+  text-align: start;
+}
+
+.table-data > thead th:first-child,
+.table-data > tbody td:first-child {
+  text-align: center;
+  width: 48px;
+}
+
+.table-data > tbody td {
+  border-bottom: 1px solid var(--color-primary);
+  padding: 8px;
+}
+
+.table-data > tbody td img {
+  max-width: 120px;
+  max-height: 72px;
+}
+
+.table-data > tbody td i {
+  font-size: 1rem;
+}
+
+.table-data .action-button-column {
+  width: 120px;
+}
